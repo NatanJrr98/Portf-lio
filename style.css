@@ -37,6 +37,15 @@ body{
     transform: scale(1.1);
 }
 
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color:aqua;
+}
 /*Estilo do Cabeçalho*/
 
 header{
@@ -115,4 +124,19 @@ section.topo-do-site .flex{
     100% {
         top: 30px;
     }
+}
+
+/*Estilo das Especialidades*/
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 48px;
 }
