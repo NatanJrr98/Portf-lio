@@ -48,6 +48,13 @@ h2.titulo span{
 }
 /*ESTILO DO CABEÇALHO*/
 
+.logo img {
+    width: 100px;        /* Defina o tamanho ideal para o cabeçalho (ex: 60px ou 70px) */
+    height: 100px;       /* Deve ser igual à largura para ficar um círculo perfeito */
+    object-fit: cover;  /* Encaixa a imagem sem distorcer */
+    border-radius: 50%; /* Deixa a imagem redonda igual ao rodapé */
+}
+
 header{
     padding: 40px 4%;
 }
@@ -195,7 +202,7 @@ section.sobre .flex{
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button{
+.btn-social button{
     width: 60px;
     height: 60px;
     border-radius: 30px;
@@ -303,4 +310,42 @@ form .btn-enviar input{
     cursor: pointer;
     font-weight: 700;
     transition: .2s;
+}
+
+/*ESTILO DO RODAPÉ*/
+
+.logo-footer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0px 0px 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 3px solid aqua;
+    margin: 20px 0;
+}
+
+footer .line-footer p i{
+    color: aqua;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+    font-size: 20px;
 }
