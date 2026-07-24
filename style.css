@@ -6,6 +6,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #000;
     height: 100vh;
@@ -51,13 +55,9 @@ h2.titulo span {
 
 .logo img {
     width: 100px;
-    /* Defina o tamanho ideal para o cabeçalho (ex: 60px ou 70px) */
     height: 100px;
-    /* Deve ser igual à largura para ficar um círculo perfeito */
     object-fit: cover;
-    /* Encaixa a imagem sem distorcer */
     border-radius: 50%;
-    /* Deixa a imagem redonda igual ao rodapé */
 }
 
 header {
@@ -294,6 +294,7 @@ section.sobre .flex {
     font-size: 24px;
     margin: 20px 10px;
     transition: .2s;
+    cursor: pointer;
 }
 
 /*ESTILO DO PORTFOLIO*/
