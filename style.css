@@ -103,7 +103,8 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile{
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
     height: 100vh;
     position: fixed;
     top: 0;
@@ -115,7 +116,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile.abrir-menu{
-    width: 70%;
+    width: 100%;
 }
 
 .menu-mobile.abrir-menu ~ .overlay-menu{
@@ -134,7 +135,11 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile nav ul{
-    text-align: right;
+    text-align: center;
+}
+
+.menu-mobile nav ul li {
+    margin-bottom: 20px; 
 }
 
 .menu-mobile nav ul li a{
