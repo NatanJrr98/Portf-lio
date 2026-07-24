@@ -442,6 +442,24 @@ footer .line-footer p a {
     font-size: 20px;
 }
 
+/*ESTILO DO COPYRIGHT*/
+
+.copyright {
+    text-align: center;
+    color: #7d7d7d; /* Um tom de cinza discreto */
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.copyright-menu {
+    position: absolute; /* Fixa o texto em relação ao menu */
+    bottom: 30px; /* Gruda na parte de baixo da tela */
+    width: 100%;
+    text-align: center;
+    color: #7d7d7d;
+    font-size: 16px; /* Fonte um pouquinho menor para o celular */
+}
+
 /*RESPONSIVIDADE*/
 
 @media screen and (max-width: 768px) {
@@ -540,5 +558,6 @@ footer .line-footer p a {
 
     .btn-abrir-menu{
         display: block;
-    }
+    }  
 }
+
