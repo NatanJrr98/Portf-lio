@@ -519,6 +519,41 @@ footer .line-footer p a {
     font-size: 16px; /* Fonte um pouquinho menor para o celular */
 }
 
+/* CAIXA QUE SEGURA A IMAGEM E O TEXTO */
+.projeto-box {
+    display: flex;
+    flex-direction: column; /* Isso força o texto a ficar embaixo da imagem */
+    align-items: center;
+    width: 32%; /* Garante que os 3 projetos caibam lado a lado no desktop */
+}
+
+/* GARANTE QUE A IMAGEM OCUPE A CAIXA TODA */
+.projeto-box .img-port {
+    width: 100%;
+    max-width: 360px;
+}
+
+/* ESTILO DO TEXTO ABAIXO DA IMAGEM */
+.descricao-projeto {
+    text-align: center;
+    margin-top: 15px; /* Espaço entre a imagem e o texto */
+    padding: 0 10px;
+}
+
+.descricao-projeto p {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* ESTILO DAS TECNOLOGIAS */
+.tech-stack {
+    font-size: 13px;
+    color: #00e5ff; /* O seu tom aqua para destacar as tecnologias */
+    font-weight: 600;
+}
+
 /*RESPONSIVIDADE*/
 
 @media screen and (max-width: 768px) {
