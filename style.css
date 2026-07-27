@@ -554,6 +554,114 @@ footer .line-footer p a {
     font-weight: 600;
 }
 
+/* ESTILO DO BOTÃO DE TEMA */
+.btn-tema {
+    background: transparent;
+    border: none;
+    color: aqua;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-tema i{
+    font-size: 25px;
+}
+
+.btn-tema:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px aqua;
+}
+
+/* =========================================
+   VARIAÇÕES PARA O TEMA CLARO (LIGHT MODE) 
+   ========================================= */
+
+body.light-mode {
+    background-color: #e5e7eba8; /* Fundo branco/gelo */
+}
+
+/* Trocando a cor dos textos principais para escuro */
+body.light-mode h1,
+body.light-mode h2.titulo,
+body.light-mode .sobre .txt-sobre h2,
+body.light-mode .descricao-projeto h3,
+body.light-mode header nav.menu-desktop a {
+    color: #1a1a1a;
+}
+
+/* Trocando a cor dos parágrafos e textos secundários */
+body.light-mode .topo-do-site .txt-topo-site p,
+body.light-mode .sobre .txt-sobre p,
+body.light-mode .descricao-projeto p,
+body.light-mode .copyright,
+body.light-mode footer .line-footer p a {
+    color: #4a4a4a;
+}
+
+/* Ajustando as caixas de especialidades para o modo claro */
+body.light-mode .especialidades .especialidades-box {
+    background-color: #1a1a1a; /* Deixa a caixa escura */
+    color: #ffffff; /* Letras brancas */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* Sombra suave para destacar do fundo gelo */
+}
+
+body.light-mode .especialidades .especialidades-box:hover {
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+}
+
+/* Sombras suaves para as seções no modo claro */
+body.light-mode section.portfolio,
+body.light-mode footer {
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode form input,
+body.light-mode form textarea {
+    background-color: #1a1a1a; /* Fundo da caixa escuro */
+    color: #ffffff; /* Texto que a pessoa vai digitar em branco */
+    border: 1px solid #333333; /* Borda bem sutil para dar acabamento */
+}
+
+body.light-mode form input::placeholder,
+body.light-mode form textarea::placeholder {
+    color: #bbbbbb; 
+}
+
+/* 1. Tira o fundo branco e o espaçamento oval do botão de tema (Sol/Lua) */
+button#btn-tema {
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+/* 2. Inverte para preto APENAS o botão 'Contato' do cabeçalho (Header) */
+body.light-mode header .btn-contato a button {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.light-mode header .btn-contato a button:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Deixa o ícone da Lua escuro também */
+body.light-mode .btn-tema {
+    color: #1a1a1a;
+}
+
+body.light-mode .btn-tema:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+body.light-mode .topo-do-site .btn-contato a button {
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #ffffff; /* Letras brancas */
+}
+
+/* Sombra e efeito ao passar o mouse no modo claro */
+body.light-mode .topo-do-site .btn-contato a button:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
 /*RESPONSIVIDADE*/
 
 @media screen and (max-width: 768px) {

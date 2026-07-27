@@ -1,3 +1,21 @@
+// LÓGICA DO TEMA CLARO/ESCURO
+const btnTema = document.getElementById('btn-tema');
+const body = document.body;
+const iconeTema = btnTema.querySelector('i');
+
+btnTema.addEventListener('click', () => {
+    // Alterna a classe 'light-mode' no body
+    body.classList.toggle('light-mode');
+    
+    // Troca o ícone dependendo do tema
+    if (body.classList.contains('light-mode')) {
+        iconeTema.classList.remove('bi-brightness-high');
+        iconeTema.classList.add('bi-moon-fill');
+    } else {
+        iconeTema.classList.remove('bi-moon-fill');
+        iconeTema.classList.add('bi-brightness-high');
+    }
+});
 
 function enviarWhatsApp() {
     // Pega os valores que o usuário digitou
@@ -22,3 +40,5 @@ function enviarWhatsApp() {
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
     window.open(url, '_blank');
 }
+
+
