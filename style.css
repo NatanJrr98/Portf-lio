@@ -632,6 +632,7 @@ body.light-mode form textarea::placeholder {
 button#btn-tema {
     background-color: transparent !important;
     padding: 0 !important;
+    box-shadow: none !important;
 }
 
 /* 2. Inverte para preto APENAS o botão 'Contato' do cabeçalho (Header) */
@@ -683,9 +684,21 @@ body.light-mode .topo-do-site .btn-contato a button:hover {
 
     /*CABEÇALHO*/
 
-    .menu-desktop,
-    .btn-contato {
+    header > .interface {
+        justify-content: flex-end; /* Alinha os itens da direita pro final */
+        gap: 30px; /* Dá um espaço entre a Lua e o Menu */
+    }
+
+    .logo {
+        margin-right: auto; /* Empurra a logo com força para a esquerda */
+    }
+
+    .menu-desktop{
         display: none;
+    }
+
+    header .btn-contato a {
+        display: none; 
     }
 
     /*TOPO DO SITE*/
@@ -698,8 +711,11 @@ body.light-mode .topo-do-site .btn-contato a button:hover {
         font-size: 30px;
     }
 
-    .topo-do-site .img-topo-site img {
-        width: 100%;
+    .foto-topo-site {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        display: block;
     }
 
     section.topo-do-site .flex {
@@ -710,6 +726,10 @@ body.light-mode .topo-do-site .btn-contato a button:hover {
 
     section.especialidades {
         padding: 40px 8%;
+    }
+
+    section.especialidades .flex {
+        align-items: center;
     }
 
     /*SOBRE*/
@@ -764,6 +784,11 @@ body.light-mode .topo-do-site .btn-contato a button:hover {
 
     .botoes-contato {
         flex-direction: column; /* Coloca um botão embaixo do outro */
+    }
+
+    .projeto-box {
+        width: 100%;
+        margin-bottom: 40px;
     }
 }
 
