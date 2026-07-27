@@ -229,14 +229,18 @@ section.especialidades {
 
 section.especialidades .flex {
     gap: 60px;
+    flex-wrap: wrap; /* Diz ao navegador que pode jogar os itens para baixo */
+    justify-content: center;
 }
 
 .especialidades .especialidades-box {
     color: #fff;
-    padding: 40px;
+    width: 250px;
+    padding: 30px;
     margin-top: 45px;
     border-radius: 20px;
     transition: .2s;
+    text-align: center;
 }
 
 .especialidades .especialidades-box:hover {
@@ -288,6 +292,18 @@ section.sobre .flex {
 
 .sobre .txt-sobre p {
     text-align: justify;
+}
+
+.sobre .img-sobre {
+    width: 100%;
+    max-width: 500px; 
+}
+
+.sobre .img-sobre img {
+    width: 100%;
+    border-radius: 20px; 
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.15); 
+    object-fit: cover;
 }
 
 .btn-social button {
@@ -402,6 +418,49 @@ form .btn-enviar input {
     cursor: pointer;
     font-weight: 700;
     transition: .2s;
+}
+
+/* Alinha os botões lado a lado */
+.botoes-contato {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Ajuda a não quebrar no celular */
+}
+
+/* Estilo Base dos botões */
+.botoes-contato button {
+    padding: 15px 30px;
+    border-radius: 30px; /* Mantém o padrão arredondado */
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    flex: 1; /* Faz os dois botões dividirem o mesmo espaço */
+    justify-content: center;
+}
+
+/* Botão de E-mail (Cor Aqua) */
+.btn-email {
+    background-color: #00e5ff;
+    color: #000;
+}
+.btn-email:hover {
+    box-shadow: 0 0 15px #00e5ff;
+    transform: scale(1.05);
+}
+
+/* Botão de WhatsApp (Verde) */
+.btn-wpp {
+    background-color: #25D366;
+    color: #fff;
+}
+.btn-wpp:hover {
+    box-shadow: 0 0 15px #25D366;
+    transform: scale(1.05);
 }
 
 /*ESTILO DO RODAPÉ*/
@@ -559,5 +618,9 @@ footer .line-footer p a {
     .btn-abrir-menu{
         display: block;
     }  
+
+    .botoes-contato {
+        flex-direction: column; /* Coloca um botão embaixo do outro */
+    }
 }
 
